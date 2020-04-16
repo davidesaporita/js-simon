@@ -28,6 +28,9 @@ body {
     background-color: black;
     box-shadow: 0px 0px 12px rgba(0,0,0, .3);
     z-index: 1;
+    transition: transform 15s;
+    transition-delay: 1s;
+    animation: rotate 200ms;
 }
 
 .circle-wrapper {
@@ -132,4 +135,32 @@ body {
 
 #label {
     color: white;
+}
+
+.fall {
+    transform: translateY(1200px);
+}
+
+header,
+footer {
+    padding: 20px;
+}
+
+@keyframes rotate {
+    0,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
 }

@@ -82,6 +82,7 @@ function flash(ref, level, array = [], combination = [], listening = false){
                 
             } else {
                 label('YOU LOSE');
+                document.getElementById('circle-back').classList.add('fall');
                 console.log('hai perso hahahahahha!');
             }
         }
@@ -102,6 +103,5 @@ function label(string, level = false) {
         document.getElementById('label').innerHTML = string + level;
     } else {
         document.getElementById('label').innerHTML = string;
-    }
-    
+    }   
 }
