@@ -1,25 +1,3 @@
-/* General */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #ddd;
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-}
-
-#app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Main */
 .circle-back {
     position: relative;
     width: 450px;
@@ -50,26 +28,25 @@ body {
     width: 200px;
     height: 200px;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .green {
-    background: #2AB243;
+    background: green;
     transform: rotate(5deg) skew(10deg);
 }
 
 .red {
-    background: #E71D2B;
+    background: red;
     transform: rotate(95deg) skew(10deg);
 }
 
 .yellow {
-    background: #F3CA4A;
+    background: yellow;
     transform: rotate(185deg) skew(10deg);
 }
 
 .blue {
-    background: #00AFE4;
+    background: blue;
     transform: rotate(275deg) skew(10deg);
 }
 
@@ -92,9 +69,6 @@ body {
 
 .bar {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     background-color: black;
     z-index: 10;
 }
@@ -107,29 +81,4 @@ body {
 .bar--vertical {
     width: 40px;
     height: 95%;
-}
-
-.spicchio.active {
-    background: white;
-}
-
-#game-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 130px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    background-color: black;
-    z-index: 11;
-    font-family: 'Courier Prime', sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
-
-#label {
-    color: white;
 }

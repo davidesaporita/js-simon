@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom Style -->
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Simon says</title>
 </head>
 <body>
+    <div id="app">
+        <header>
+            Salve Simon!
+        </header>
 
+        <main>
+            <div class="circle-back">
+                <div class="circle-wrapper">
+                    <div class="spicchio green">
+                        <a href="#"></span></a>
+                    </div>
+                    <div class="spicchio red">
+                        <a href="#"></span></a>
+                    </div>
+                    <div class="spicchio blue">
+                        <a href="#"></span></a>
+                    </div>
+                    <div class="spicchio yellow">
+                        <a href="#"></span></a>
+                    </div>
+                </div>
+                <div class="bar bar--horizontal absolute-center"></div>
+                <div class="bar bar--vertical absolute-center"></div>
+                <div id="game-display">
+                    <span id="label">LEVEL 1</span>
+                </div>
+            </div>        
+        </main>
+
+        <footer>
+            <p>Made with &hearts; by Davide Saporita for Boolean Careers / Classe #12 &copy; 2020</p>
+        </footer>
+
+    </div>
 
     <script src="script/main.js"></script>
 </body>
